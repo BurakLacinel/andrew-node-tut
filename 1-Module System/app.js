@@ -1,5 +1,4 @@
-const fs = require("fs");
+require("./utils.js");
 
-fs.writeFileSync("notes.txt", "My Name is Burak.");
-
-fs.appendFileSync("notes.txt", " I live in Istanbul.");
+// "require" edilmesine rağmen, "utils.js" içerisindeki değişkenlere buradan ulaşamayız.
+console.log(name);
