@@ -1,6 +1,7 @@
 console.log("utils.js");
 
-const name = "Burak";
+const add = function (a, b) {
+  return a + b;
+};
 
-// "name"i export ettiğimiz için, "utils"in "require" edildiği dosyalarda kullanılabilir.
-module.exports = name;
+module.exports = add;
